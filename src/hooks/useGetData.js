@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+axios.defaults.baseURL = "https://dummyjson.com";
+
 export const useGetData = (url) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
