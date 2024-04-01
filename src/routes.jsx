@@ -3,7 +3,7 @@ import { Customers, Dashboard, Inventory, Orders } from "./pages";
 
 function routes() {
   return (
-    <div style={{ paddingLeft: "12px" }}>
+    <div style={{ paddingLeft: "20px" }}>
       <Routes>
         <Route path="/" element={<Dashboard />}></Route>
         <Route path="/inventory" element={<Inventory />}></Route>
