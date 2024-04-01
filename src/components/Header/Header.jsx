@@ -28,7 +28,6 @@ function Header() {
         width={40}
         src="https://ps.w.org/ultimate-dashboard/assets/icon-256x256.png?rev=2859260"
       ></Image>
-      <Typography.Title>Sales Dashboard</Typography.Title>
       <Space size="large">
         {!commentsError && (
           <BadgeItem
