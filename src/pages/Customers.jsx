@@ -1,17 +1,12 @@
 import { Avatar, Space, Table, Typography } from "antd";
 
+import { Error } from "../components";
 import { useGetData } from "../hooks";
 
 function Customers() {
   const { data, error, loading } = useGetData("/users");
 
-  if (error) {
-    return (
-      <div style={{ textAlign: "center" }}>
-        Something is wrong. Reload page please
-      </div>
-    );
-  }
+  if (error) <Error />;
 
   return (
     <Space size={20} direction="vertical">
